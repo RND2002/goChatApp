@@ -57,6 +57,7 @@ func (h *Handler) JoinRoomHandler(c *gin.Context) {
 	roomID := c.Param("room_id")
 	clientID := c.Query("user_id")
 	username := c.Query("username")
+	//fmt.Printf(roomID + " " + clientID + " " + username)
 
 	log.Printf("Client %s joined room %s", clientID, roomID)
 
